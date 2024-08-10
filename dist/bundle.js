@@ -26,7 +26,7 @@ eval("/* module decorator */ module = __webpack_require__.nmd(module);\nvar __WE
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   about: () => (/* binding */ about)\n/* harmony export */ });\n//import aboutImage from './about.jpg'\n\n\nfunction about(){\n    let content = document.getElementById(\"content\");\n    let headOne = document.createElement(\"h1\");\n    headOne.innerText = \"About Page\"\n\n    content.appendChild(headOne)\n\n    let img = document.createElement(\"img\")\n    img.setAttribute(\"id\", \"imgAbout\")\n    console.log(img)\n\n    //let myAbout = new Image();\n    //myAbout.src = aboutImage\n    img.src = \"/src/about.jpg\"\n    content.appendChild(img)\n\n    document.getElementById(\"imgAbout\").style.width = \"200px\";\n    document.getElementById(\"imgAbout\").style.height = \"400px\";\n\n\n    let paraOne = document.createElement(\"p\")\n    paraOne.innerText = \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae optio unde possimus pariatur earum ipsum molestias quo doloribus? Molestiae ad tempora tempore blanditiis placeat quos a, obcaecati qui quis voluptates.\"\n    content.appendChild(paraOne)\n\n    let paraTwo = document.createElement(\"p\")\n    console.log(paraTwo)\n    paraTwo.innerText = \"Test Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae optio unde possimus pariatur earum ipsum molestias quo doloribus? Molestiae ad tempora tempore blanditiis placeat quos a, obcaecati qui quis voluptates\"\n    \n    \n    content.appendChild(paraTwo)\n\n}\n\n\n\n//# sourceURL=webpack://resturant-page/./src/about.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   about: () => (/* binding */ about)\n/* harmony export */ });\n/* harmony import */ var _about_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./about.jpg */ \"./src/about.jpg\");\n\n\n\nfunction about(){\n    let content = document.getElementById(\"content\");\n    let headOne = document.createElement(\"h1\");\n    headOne.innerText = \"About Page\"\n\n    content.appendChild(headOne)\n\n    let img = document.createElement(\"img\")\n    img.setAttribute(\"id\", \"imgAbout\")\n    console.log(img)\n\n    let myAbout = new Image();\n    myAbout.src = _about_jpg__WEBPACK_IMPORTED_MODULE_0__\n    //img.src = \"/src/about.jpg\"\n    content.appendChild(img)\n\n    document.getElementById(\"imgAbout\").style.width = \"200px\";\n    document.getElementById(\"imgAbout\").style.height = \"400px\";\n\n\n    let paraOne = document.createElement(\"p\")\n    paraOne.innerText = \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae optio unde possimus pariatur earum ipsum molestias quo doloribus? Molestiae ad tempora tempore blanditiis placeat quos a, obcaecati qui quis voluptates.\"\n    content.appendChild(paraOne)\n\n    let paraTwo = document.createElement(\"p\")\n    console.log(paraTwo)\n    paraTwo.innerText = \"Test Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae optio unde possimus pariatur earum ipsum molestias quo doloribus? Molestiae ad tempora tempore blanditiis placeat quos a, obcaecati qui quis voluptates\"\n    \n    \n    content.appendChild(paraTwo)\n\n}\n\n\n\n//# sourceURL=webpack://resturant-page/./src/about.js?");
 
 /***/ }),
 
@@ -37,7 +37,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   home: () => (/* binding */ home)\n/* harmony export */ });\n//import cafeImage from './cafe.jpg'\n\nfunction home() {\n\n    let content = document.getElementById(\"content\")\n    console.log(content)\n    \n    let hOne = document.createElement(\"h1\")\n    hOne.innerText = \"Welcome, Resturant Home Page\"\n    \n    content.appendChild(hOne)\n    \n    let img = document.createElement(\"img\");\n    img.setAttribute(\"id\", \"cafePNG\")\n\n    //let myCafe = new Image();\n    //myCafe.src = cafeImage\n    img.src = \"/src/cafe.jpg\";\n    content.appendChild(img)\n\n    //document.getElementById(\"cafePNG\").style.width = \"200px\";\n    document.getElementById(\"cafePNG\").style.width = \"400px\";\n    \n    let paraOne = document.createElement(\"p\")\n    paraOne.innerText = \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae optio unde possimus pariatur earum ipsum molestias quo doloribus? Molestiae ad tempora tempore blanditiis placeat quos a, obcaecati qui quis voluptates.\"\n    content.appendChild(paraOne)\n    \n    let paraTwo = document.createElement(\"p\")\n    paraTwo.innerText = \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae optio unde possimus pariatur earum ipsum molestias quo doloribus? Molestiae ad tempora tempore blanditiis placeat quos a, obcaecati qui quis voluptates.\"\n    content.appendChild(paraTwo)\n    \n    let headTwo = document.createElement(\"h2\")\n    headTwo.innerText = \"Buy Food Here\";\n    content.appendChild(headTwo)\n    \n    let paraThree = document.createElement(\"p\")\n    paraThree.innerText = \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae optio unde possimus pariatur earum ipsum molestias quo doloribus? Molestiae ad tempora tempore blanditiis placeat quos a, obcaecati qui quis voluptates.\"\n    content.appendChild(paraThree)\n    \n}\n    \n\n//# sourceURL=webpack://resturant-page/./src/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   home: () => (/* binding */ home)\n/* harmony export */ });\n/* harmony import */ var _cafe_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cafe.jpg */ \"./src/cafe.jpg\");\n\n\nfunction home() {\n\n    let content = document.getElementById(\"content\")\n    console.log(content)\n    \n    let hOne = document.createElement(\"h1\")\n    hOne.innerText = \"Welcome, Resturant Home Page\"\n    \n    content.appendChild(hOne)\n    \n    let img = document.createElement(\"img\");\n    img.setAttribute(\"id\", \"cafePNG\")\n\n    let myCafe = new Image();\n    //myCafe.src = cafeImage\n    img.src = \"/src/cafe.jpg\";\n    content.appendChild(img)\n\n    document.getElementById(\"cafePNG\").style.width = \"200px\";\n    document.getElementById(\"cafePNG\").style.width = \"400px\";\n    \n    let paraOne = document.createElement(\"p\")\n    paraOne.innerText = \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae optio unde possimus pariatur earum ipsum molestias quo doloribus? Molestiae ad tempora tempore blanditiis placeat quos a, obcaecati qui quis voluptates.\"\n    content.appendChild(paraOne)\n    \n    let paraTwo = document.createElement(\"p\")\n    paraTwo.innerText = \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae optio unde possimus pariatur earum ipsum molestias quo doloribus? Molestiae ad tempora tempore blanditiis placeat quos a, obcaecati qui quis voluptates.\"\n    content.appendChild(paraTwo)\n    \n    let headTwo = document.createElement(\"h2\")\n    headTwo.innerText = \"Buy Food Here\";\n    content.appendChild(headTwo)\n    \n    let paraThree = document.createElement(\"p\")\n    paraThree.innerText = \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae optio unde possimus pariatur earum ipsum molestias quo doloribus? Molestiae ad tempora tempore blanditiis placeat quos a, obcaecati qui quis voluptates.\"\n    content.appendChild(paraThree)\n    \n}\n    \n\n//# sourceURL=webpack://resturant-page/./src/home.js?");
 
 /***/ }),
 
@@ -59,7 +59,40 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var loda
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   menu: () => (/* binding */ menu)\n/* harmony export */ });\n//import menuImage from './menu.jpeg'\n\n\nfunction menu(){\n    let content = document.getElementById(\"content\");\n    let headOne = document.createElement(\"h1\");\n    headOne.innerText = \"Menu Page\"\n\n    content.appendChild(headOne)\n\n    let img = document.createElement(\"img\")\n    img.setAttribute(\"id\", \"imgDiv\")\n    console.log(img)\n\n    //let myMenu = new Image();\n    //myMenu.src = menuImage\n\n    img.src = \"/src/menu.jpeg\"\n    content.appendChild(img)\n\n    document.getElementById(\"imgDiv\").style.height = \"300px\"\n    document.getElementById(\"imgDiv\").style.width = \"400px\"\n\n    let headTwo = document.createElement(\"h2\")\n    headTwo.innerText = \"Above is the menu to choose from\"\n    content.appendChild(headTwo)\n\n    let paraOne = document.createElement(\"p\")\n    paraOne.innerText = \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae optio unde possimus pariatur earum ipsum molestias quo doloribus? Molestiae ad tempora tempore blanditiis placeat quos a, obcaecati qui quis voluptates.\"\n    content.appendChild(paraOne)\n\n    let paraTwo = document.createElement(\"p\")\n    paraTwo.innerText = \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae optio unde possimus pariatur earum ipsum molestias quo doloribus? Molestiae ad tempora tempore blanditiis placeat quos a, obcaecati qui quis voluptates.\"\n    content.appendChild(paraTwo)\n}\n\n//# sourceURL=webpack://resturant-page/./src/menu.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   menu: () => (/* binding */ menu)\n/* harmony export */ });\n/* harmony import */ var _menu_jpeg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./menu.jpeg */ \"./src/menu.jpeg\");\n\n\n\nfunction menu(){\n    let content = document.getElementById(\"content\");\n    let headOne = document.createElement(\"h1\");\n    headOne.innerText = \"Menu Page\"\n\n    content.appendChild(headOne)\n\n    let img = document.createElement(\"img\")\n    img.setAttribute(\"id\", \"imgDiv\")\n    console.log(img)\n\n    let myMenu = new Image();\n    myMenu.src = _menu_jpeg__WEBPACK_IMPORTED_MODULE_0__\n\n    //img.src = \"/src/menu.jpeg\"\n    content.appendChild(img)\n\n    document.getElementById(\"imgDiv\").style.height = \"300px\"\n    document.getElementById(\"imgDiv\").style.width = \"400px\"\n\n    let headTwo = document.createElement(\"h2\")\n    headTwo.innerText = \"Above is the menu to choose from\"\n    content.appendChild(headTwo)\n\n    let paraOne = document.createElement(\"p\")\n    paraOne.innerText = \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae optio unde possimus pariatur earum ipsum molestias quo doloribus? Molestiae ad tempora tempore blanditiis placeat quos a, obcaecati qui quis voluptates.\"\n    content.appendChild(paraOne)\n\n    let paraTwo = document.createElement(\"p\")\n    paraTwo.innerText = \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae optio unde possimus pariatur earum ipsum molestias quo doloribus? Molestiae ad tempora tempore blanditiis placeat quos a, obcaecati qui quis voluptates.\"\n    content.appendChild(paraTwo)\n}\n\n//# sourceURL=webpack://resturant-page/./src/menu.js?");
+
+/***/ }),
+
+/***/ "./src/about.jpg":
+/*!***********************!*\
+  !*** ./src/about.jpg ***!
+  \***********************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"0516cb54316554f61570.jpg\";\n\n//# sourceURL=webpack://resturant-page/./src/about.jpg?");
+
+/***/ }),
+
+/***/ "./src/cafe.jpg":
+/*!**********************!*\
+  !*** ./src/cafe.jpg ***!
+  \**********************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"64372ff9b464726560d5.jpg\";\n\n//# sourceURL=webpack://resturant-page/./src/cafe.jpg?");
+
+/***/ }),
+
+/***/ "./src/menu.jpeg":
+/*!***********************!*\
+  !*** ./src/menu.jpeg ***!
+  \***********************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"a2b746f18e8847bb4616.jpeg\";\n\n//# sourceURL=webpack://resturant-page/./src/menu.jpeg?");
 
 /***/ })
 
@@ -152,6 +185,29 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			if (!module.children) module.children = [];
 /******/ 			return module;
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
