@@ -1,4 +1,4 @@
-import menuImage from './menu.jpeg'
+//import menuImage from './menu.jpeg'
 
 
 export function menu(){
@@ -12,8 +12,8 @@ export function menu(){
     img.setAttribute("id", "imgDiv")
     console.log(img)
 
-    let myMenu = new Image();
-    myMenu.src = menuImage
+    //let myMenu = new Image();
+    //myMenu.src = menuImage
 
     img.src = "/src/menu.jpeg"
     content.appendChild(img)
