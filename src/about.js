@@ -1,3 +1,5 @@
+import aboutImage from './about.jpg'
+
 
 export function about(){
     let content = document.getElementById("content");
@@ -9,7 +11,10 @@ export function about(){
     let img = document.createElement("img")
     img.setAttribute("id", "imgAbout")
     console.log(img)
-    img.src = "/src/about.jpg"
+
+    let myAbout = new Image();
+    myAbout.src = aboutImage
+    //img.src = "/src/about.jpg"
     content.appendChild(img)
 
     document.getElementById("imgAbout").style.width = "200px";

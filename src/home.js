@@ -1,3 +1,4 @@
+import cafeImage from './cafe.jpg'
 
 export function home() {
 
@@ -11,8 +12,12 @@ export function home() {
     
     let img = document.createElement("img");
     img.setAttribute("id", "cafePNG")
-    img.src = "/cafe.jpg";
+
+    let myCafe = new Image();
+    myCafe.src = cafeImage
+    //img.src = "/src/cafe.jpg";
     content.appendChild(img)
+
     
     document.getElementById("cafePNG").style.width = "400px";
     

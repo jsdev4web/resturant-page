@@ -16,6 +16,7 @@ function tabSwitching() {
         let html = "";
         let content = document.getElementById("content");
         content.innerText = html;
+
         home()
     })
 
