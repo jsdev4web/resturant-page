@@ -1,4 +1,4 @@
-//import aboutImage from './about.jpg'
+import aboutImage from './about.jpg'
 
 
 export function about(){
@@ -12,9 +12,9 @@ export function about(){
     img.setAttribute("id", "imgAbout")
     console.log(img)
 
-    //let myAbout = new Image();
-    //myAbout.src = aboutImage
-    img.src = "/src/about.jpg"
+    let myAbout = new Image();
+    myAbout.src = aboutImage
+    //img.src = "/src/about.jpg"
     content.appendChild(img)
 
     document.getElementById("imgAbout").style.width = "200px";
