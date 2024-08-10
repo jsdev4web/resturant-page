@@ -10,18 +10,16 @@ export function home() {
     
     content.appendChild(hOne)
     
-    let img = document.createElement("img");
-    img.setAttribute("id", "cafePNG")
+    //let img = document.createElement("img");
+    //img.setAttribute("id", "cafePNG")
 
-    let myCafe = new Image();
-    console.log(myCafe)
+    let myCafe = new Image(300, 200);
     myCafe.src = cafeImage
-    console.log(cafeImage)
     //img.src = "/src/cafe.jpg";
     content.appendChild(myCafe)
 
-    document.getElementById("cafePNG").style.width = "200px";
-    document.getElementById("cafePNG").style.width = "400px";
+    //document.getElementById("cafePNG").style.width = "200px";
+    //document.getElementById("cafePNG").style.width = "400px";
     
     let paraOne = document.createElement("p")
     paraOne.innerText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae optio unde possimus pariatur earum ipsum molestias quo doloribus? Molestiae ad tempora tempore blanditiis placeat quos a, obcaecati qui quis voluptates."

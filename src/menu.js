@@ -8,18 +8,18 @@ export function menu(){
 
     content.appendChild(headOne)
 
-    let img = document.createElement("img")
-    img.setAttribute("id", "imgDiv")
-    console.log(img)
+    //let img = document.createElement("img")
+    //img.setAttribute("id", "imgDiv")
+    //console.log(img)
 
-    let myMenu = new Image();
+    let myMenu = new Image(300, 400);
     myMenu.src = menuImage
 
     //img.src = "/src/menu.jpeg"
-    content.appendChild(img)
+    content.appendChild(myMenu)
 
-    document.getElementById("imgDiv").style.height = "300px"
-    document.getElementById("imgDiv").style.width = "400px"
+    //document.getElementById("imgDiv").style.height = "300px"
+    //document.getElementById("imgDiv").style.width = "400px"
 
     let headTwo = document.createElement("h2")
     headTwo.innerText = "Above is the menu to choose from"
