@@ -37,7 +37,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   home: () => (/* binding */ home)\n/* harmony export */ });\n\nfunction home() {\n\n    let content = document.getElementById(\"content\")\n    console.log(content)\n    \n    let hOne = document.createElement(\"h1\")\n    hOne.innerText = \"Welcome, Resturant Home Page\"\n    \n    content.appendChild(hOne)\n    \n    let img = document.createElement(\"img\");\n    img.setAttribute(\"id\", \"cafePNG\")\n    img.src = \"/cafe.jpg\";\n    content.appendChild(img)\n    \n    document.getElementById(\"cafePNG\").style.width = \"400px\";\n    \n    let paraOne = document.createElement(\"p\")\n    paraOne.innerText = \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae optio unde possimus pariatur earum ipsum molestias quo doloribus? Molestiae ad tempora tempore blanditiis placeat quos a, obcaecati qui quis voluptates.\"\n    content.appendChild(paraOne)\n    \n    let paraTwo = document.createElement(\"p\")\n    paraTwo.innerText = \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae optio unde possimus pariatur earum ipsum molestias quo doloribus? Molestiae ad tempora tempore blanditiis placeat quos a, obcaecati qui quis voluptates.\"\n    content.appendChild(paraTwo)\n    \n    let headTwo = document.createElement(\"h2\")\n    headTwo.innerText = \"Buy Food Here\";\n    content.appendChild(headTwo)\n    \n    let paraThree = document.createElement(\"p\")\n    paraThree.innerText = \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae optio unde possimus pariatur earum ipsum molestias quo doloribus? Molestiae ad tempora tempore blanditiis placeat quos a, obcaecati qui quis voluptates.\"\n    content.appendChild(paraThree)\n    \n}\n    \n\n//# sourceURL=webpack://resturant-page/./src/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   home: () => (/* binding */ home)\n/* harmony export */ });\n/* harmony import */ var _home_jsdev4web_repos_resturant_page_cafe_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cafe.jpg */ \"./cafe.jpg\");\n\n\nfunction home() {\n\n    let content = document.getElementById(\"content\")\n    console.log(content)\n    \n    let hOne = document.createElement(\"h1\")\n    hOne.innerText = \"Welcome, Resturant Home Page\"\n    \n    content.appendChild(hOne)\n    \n    let img = document.createElement(\"img\");\n    img.setAttribute(\"id\", \"cafePNG\")\n    img.src = \"/cafe.jpg\";\n    content.appendChild(img)\n\n\n\n        const cafeImg = new Image();\n        cafeImg.src = _home_jsdev4web_repos_resturant_page_cafe_jpg__WEBPACK_IMPORTED_MODULE_0__\n        content.appendChild(cafeImg)\n\n    \n    document.getElementById(\"cafePNG\").style.width = \"400px\";\n    \n    let paraOne = document.createElement(\"p\")\n    paraOne.innerText = \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae optio unde possimus pariatur earum ipsum molestias quo doloribus? Molestiae ad tempora tempore blanditiis placeat quos a, obcaecati qui quis voluptates.\"\n    content.appendChild(paraOne)\n    \n    let paraTwo = document.createElement(\"p\")\n    paraTwo.innerText = \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae optio unde possimus pariatur earum ipsum molestias quo doloribus? Molestiae ad tempora tempore blanditiis placeat quos a, obcaecati qui quis voluptates.\"\n    content.appendChild(paraTwo)\n    \n    let headTwo = document.createElement(\"h2\")\n    headTwo.innerText = \"Buy Food Here\";\n    content.appendChild(headTwo)\n    \n    let paraThree = document.createElement(\"p\")\n    paraThree.innerText = \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae optio unde possimus pariatur earum ipsum molestias quo doloribus? Molestiae ad tempora tempore blanditiis placeat quos a, obcaecati qui quis voluptates.\"\n    content.appendChild(paraThree)\n    \n}\n    \n\n//# sourceURL=webpack://resturant-page/./src/home.js?");
 
 /***/ }),
 
@@ -48,7 +48,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./about */ \"./src/about.js\");\n\n\n\n\n\n(0,_home__WEBPACK_IMPORTED_MODULE_1__.home)()\n\n\nfunction tabSwitching() {\n    console.log(\"working on  tab switching\")\n\n    let homeBtn = document.getElementById(\"homeBtn\")\n    //console.log(homeBtn)\n    homeBtn.addEventListener(\"click\", (e) => {\n        console.log(e.target)\n        let html = \"\";\n        let content = document.getElementById(\"content\");\n        content.innerText = html;\n        (0,_home__WEBPACK_IMPORTED_MODULE_1__.home)()\n    })\n\n\n    let aboutBtn = document.getElementById(\"aboutBtn\")\n    //console.log(menuBtn)\n    aboutBtn.addEventListener(\"click\", (e) => {\n        console.log(e.target)\n        let html = \"\"\n        let content = document.getElementById(\"content\");\n        content.innerText = html\n        ;(0,_about__WEBPACK_IMPORTED_MODULE_3__.about)()\n    })\n\n\n    let menuBtn = document.getElementById(\"menuBtn\")\n    //console.log(menuBtn)\n    menuBtn.addEventListener(\"click\", (e) => {\n        console.log(e.target)\n        let html = \"\"\n        let content = document.getElementById(\"content\");\n        content.innerText = html\n        ;(0,_menu__WEBPACK_IMPORTED_MODULE_2__.menu)()\n    })\n\n}\n\ntabSwitching()\n\n//# sourceURL=webpack://resturant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./about */ \"./src/about.js\");\n\n\n\n\n\n(0,_home__WEBPACK_IMPORTED_MODULE_1__.home)()\n\n\nfunction tabSwitching() {\n    console.log(\"working on  tab switching\")\n\n    let homeBtn = document.getElementById(\"homeBtn\")\n    //console.log(homeBtn)\n    homeBtn.addEventListener(\"click\", (e) => {\n        console.log(e.target)\n        let html = \"\";\n        let content = document.getElementById(\"content\");\n        content.innerText = html;\n\n        (0,_home__WEBPACK_IMPORTED_MODULE_1__.home)()\n    })\n\n\n    let aboutBtn = document.getElementById(\"aboutBtn\")\n    //console.log(menuBtn)\n    aboutBtn.addEventListener(\"click\", (e) => {\n        console.log(e.target)\n        let html = \"\"\n        let content = document.getElementById(\"content\");\n        content.innerText = html\n        ;(0,_about__WEBPACK_IMPORTED_MODULE_3__.about)()\n    })\n\n\n    let menuBtn = document.getElementById(\"menuBtn\")\n    //console.log(menuBtn)\n    menuBtn.addEventListener(\"click\", (e) => {\n        console.log(e.target)\n        let html = \"\"\n        let content = document.getElementById(\"content\");\n        content.innerText = html\n        ;(0,_menu__WEBPACK_IMPORTED_MODULE_2__.menu)()\n    })\n\n}\n\ntabSwitching()\n\n//# sourceURL=webpack://resturant-page/./src/index.js?");
 
 /***/ }),
 
@@ -60,6 +60,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var loda
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   menu: () => (/* binding */ menu)\n/* harmony export */ });\n\n\nfunction menu(){\n    let content = document.getElementById(\"content\");\n    let headOne = document.createElement(\"h1\");\n    headOne.innerText = \"Menu Page\"\n\n    content.appendChild(headOne)\n\n    let img = document.createElement(\"img\")\n    img.setAttribute(\"id\", \"imgDiv\")\n    console.log(img)\n\n    img.src = \"/src/menu.jpeg\"\n    content.appendChild(img)\n\n    document.getElementById(\"imgDiv\").style.height = \"300px\"\n    document.getElementById(\"imgDiv\").style.width = \"400px\"\n\n    let headTwo = document.createElement(\"h2\")\n    headTwo.innerText = \"Above is the menu to choose from\"\n    content.appendChild(headTwo)\n\n    let paraOne = document.createElement(\"p\")\n    paraOne.innerText = \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae optio unde possimus pariatur earum ipsum molestias quo doloribus? Molestiae ad tempora tempore blanditiis placeat quos a, obcaecati qui quis voluptates.\"\n    content.appendChild(paraOne)\n\n    let paraTwo = document.createElement(\"p\")\n    paraTwo.innerText = \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae optio unde possimus pariatur earum ipsum molestias quo doloribus? Molestiae ad tempora tempore blanditiis placeat quos a, obcaecati qui quis voluptates.\"\n    content.appendChild(paraTwo)\n}\n\n//# sourceURL=webpack://resturant-page/./src/menu.js?");
+
+/***/ }),
+
+/***/ "./cafe.jpg":
+/*!******************!*\
+  !*** ./cafe.jpg ***!
+  \******************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"64372ff9b464726560d5.jpg\";\n\n//# sourceURL=webpack://resturant-page/./cafe.jpg?");
 
 /***/ })
 
@@ -152,6 +163,29 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			if (!module.children) module.children = [];
 /******/ 			return module;
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
