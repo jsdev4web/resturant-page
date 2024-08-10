@@ -8,15 +8,14 @@ export function about(){
 
     content.appendChild(headOne)
 
-    let img = document.createElement("img")
-    img.setAttribute("id", "imgAbout")
+    //let img = document.createElement("img")
+    //img.setAttribute("id", "imgAbout")
     //console.log(img)
 
     let myAbout = new Image(200, 400);
     myAbout.src = aboutImage
-    img.appendChild(myAbout)
     //img.src = "/src/about.jpg"
-    content.appendChild(img)
+    content.appendChild(myAbout)
 
     //document.getElementById("imgAbout").style.width = "200px";
     //document.getElementById("imgAbout").style.height = "400px";
