@@ -10,8 +10,8 @@ export function home() {
     
     content.appendChild(hOne)
     
-    //let img = document.createElement("img");
-    //img.setAttribute("id", "cafePNG")
+    let img = document.createElement("img");
+    img.setAttribute("id", "cafePNG")
 
     let myCafe = new Image(300, 200);
     myCafe.src = cafeImage
